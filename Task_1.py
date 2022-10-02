@@ -3,4 +3,4 @@
 # 0,56 -> 11
 
 
-print(sum([int (i) for i in input('Введите число:')if i.isdigit()]))
+print(sum(int (i) for i in input('Введите число:')if i.isdigit()))
