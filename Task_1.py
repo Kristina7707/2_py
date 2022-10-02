@@ -3,18 +3,4 @@
 # 0,56 -> 11
 
 
-
-def sum_digital(input_number):   
-    sum_digit = 0  
-    while input_number != 0:
-        sum_digit += input_number %10
-        input_number /= 10  
-    return sum_digit 
-
-number = input('Введите число ') 
-number = number.replace ('-','').replace ('.','').replace (',','')
-
-if number.isdigit():
-    sum_digits=sum_digital(int(number))
-    print (f'Сумма цифр равна: {sum_digits}')
-    
+print(sum([int (i) for i in input('Введите число:')if i.isdigit()]))
