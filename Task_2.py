@@ -4,7 +4,6 @@
 # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 
-# n = int(input('Введите число N: '))
 def factorial(input):
     f = 1
     for i in range(2,input +1):

@@ -4,17 +4,11 @@
 # 1 -> 2.0
 # 2 -> 4.25
 
+n = int(input('Введите число: ')) 
 
-n = int(input())
+def  numbers(n):
 
-numbers = []
-
-for i in range(0, n):
-    input_value = int(input(f'Введите число n {i}: '))
-    numbers.append(input_value)
-
-sum = 0
-for i in numbers:
-    sum += i
-
-print('Сумма всех чисел последовательности:', sum)
+    return[round((1 + 1 / x)**x, 5) for x in range (1, n + 1)]   
+        
+print(numbers(n))
+print(sum(numbers(n)))
